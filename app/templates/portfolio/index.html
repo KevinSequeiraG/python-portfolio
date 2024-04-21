@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>I'm developer</h1>
+            <h1>Kevin Steven Sequeira Garita</h1>
+            <p>Software developer who loves programming, including frontend and backend development, I also enjoy
+                challenges, those that force me to learn day by day, since my motivation when facing problems is the
+                satisfaction it gives me when I solve them and in turn, increase my knowledge in different technologies,
+                in order to become a fullstack developer capable of giving the best solution to different problems.</p>
+            <a class="btn" href="#contact">Contact me</a>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='banner.jpg') }}" />
+        </div>
+    </div>
+</div>
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}

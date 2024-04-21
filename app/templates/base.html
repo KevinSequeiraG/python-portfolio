@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Rufina:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">KEVIN SEQUEIRA</div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('portfolio.index') }}">Inicio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        {% block content %}
+        {% endblock %}
+    </section>
+    <div class="footer">
+        <div class="center full-w">
+            <div class="row">
+                <h3>Contact me!</h3>
+            </div>
+        </div>
+        <div class="center full-w">
+            <div class="row">
+                <p>Or you can follow me on my social media</p>
+            </div>
+        </div>
+        <div class="center full-w social-links">
+            <div class="row">
+                <a target="_blank" href="#"><img width="30" class="social" src="{{ url_for('static', filename='linkedin.png') }}" /></a>
+                <a target="_blank" href="#"><img width="30" class="social" src="{{ url_for('static', filename='linkedin.png') }}" /></a>
+                <a target="_blank" href="#"><img width="30" class="social" src="{{ url_for('static', filename='linkedin.png') }}" /></a>
+            </div>
+        </div>
+        <div class="made-with">
+            <div class="row">
+                <p>Doit with Python and Flask by Kevin Sequeira</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
