@@ -11,7 +11,9 @@ def create_app():
     )
     
     from . import portfolio
-    
     app.register_blueprint(portfolio.bp)
+
+    # Forzar el modo de depuración
+    app.debug = True
     
     return app

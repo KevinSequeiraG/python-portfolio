@@ -1,25 +1,97 @@
-<div class="center padded white-bg">
-    <div class="content padded">
-        <div class="padded">
-            <h1>Look some of my projects using Python!</h1>
+<div class="flex justify-center px-[30px] py-[20px] bg-white">
+    <div class="w-full mdx900:w-[75%] mdx900:px-[30px] py-[20px]">
+        <div class="mdx900:px-[30px] mdx900:py-[20px] mb-8">
+            <h1 class="text-[1.2rem] mdx900:text-[1.5em]">Look some of my projects using Python!</h1>
         </div>
-        <div class="row">
-            <div class="card third">
-                <h3>Mailer app</h3>
-                <p>This is an application that sends emails using the Mailgun API.</p>
-                <a target="_blank" class="orange" href="https://mailerksg-2afeaabb6e63.herokuapp.com/">Link here</a>
+        <div class="grid grid-cols-1 mdx500:grid-cols-2 mdx900:grid-cols-3 gap-4">
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Mailer app</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">This is an application that sends emails using the Mailgun API.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://mailerksg-2afeaabb6e63.herokuapp.com/">Link here</a>
             </div>
 
-            <div class="card third">
-                <h3>Client manager</h3>
-                <p>An application to manage my clients.</p>
-                <a target="_blank" class="orange" href="{{ url_for('static', filename='libreta-clientes.exe') }}">Link here</a>
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Client manager</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">An application to manage my clients.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="{{ url_for('static', filename='libreta-clientes.exe') }}">Link here</a>
             </div>
 
-            <div class="card third">
-                <h3>Task manager</h3>
-                <p>An application to manage my tasks.</p>
-                <a target="_blank" class="orange" href="{{ url_for('static', filename='db.exe') }}">Link here</a>
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Task manager</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">An application to manage my tasks.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="{{ url_for('static', filename='db.exe') }}">Link here</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Sports Web Page</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A dynamic website dedicated to sports coverage.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://ksgsports.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">KOE Food Management App</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A comprehensive application for managing food orders and inventory.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://github.com/KevinSequeiraG/koefood">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">ArmourWeb</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">Creator of Web Apps Without Writing Code.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://armour-web-byi6.vercel.app/login">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Mossi Food Service</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A service-oriented food website featuring inventory management exclusively for administrators..</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://mossiwebpage.vercel.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Covid-19 Information Website</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">An informative website providing updates and advice on Covid-19.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://covid19kevin.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Online Resume</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A personal website showcasing professional history and skills.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://kevinsequeirag.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Simple Storefront</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A basic visual layout for an online store.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://frontendstoreksg2.netlify.app/">View Project</a>
+            </div>
+            
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Clothing Store</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">An online store specializing in fashionable clothing and accessories.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://frontendstoreksg.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Travel Blog</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A blog dedicated to sharing travel adventures and tips.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://blogviajesksg.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Coffee Blog</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A blog focusing on coffee culture, reviews, and brewing tips.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://blogcafeksg.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Real Estate Website</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A real estate website providing listings and housing information.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://bienesraicesksg.netlify.app/">View Project</a>
+            </div>
+
+            <div class="bg-white border border-1 border-solid border-[#ddd] rounded-[5px] px-[30px] py-[20px] shadow-card w-full">
+                <h3 class="text-[1.17em] font-bold mb-[.2em] mx900:mb-[1em]">Form Design</h3>
+                <p class="mb-[.2em] mdx900:mb-[1rem] font-[400] text-[.8rem]">A design showcase for modern and user-friendly online forms.</p>
+                <a target="_blank" class="text-[.8rem] font-rubik no-underline font-[700] transition-color duration-300 ease-in-out hover:text-[#d46230] text-[#f94f07]" href="https://freelancerksg.netlify.app/">View Project</a>
             </div>
         </div>        
     </div>

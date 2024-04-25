@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %} - Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -13,44 +13,48 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div class="logo">KEVIN SEQUEIRA</div>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('portfolio.index') }}">Inicio</a></li>
-                <li><a href="#contact">Contacto</a></li>
+<body class="text-[#034d6c] font-[700] bg-[#efefef] font-rufina">
+    <header class="font-rubik flex items-center justify-between p-6 z-[2] shadow-header relative">
+        <div class="text-[14px] mdx900:text-[20px] font-rubik cursor-pointer">KEVIN SEQUEIRA</div>
+        <nav class="">
+            <ul class="flex items-center gap-x-3">
+                <li class="text-[12px] mdx350:text-[14px] mdx900:text-[16px] hover:text-[#f94f07] transition-color duration-300 ease-in-out"><a
+                        href="{{ url_for('portfolio.index') }}">Inicio</a></li>
+                <li class="text-[12px] mdx350:text-[14px] mdx900:text-[16px] hover:text-[#f94f07] transition-color duration-300 ease-in-out"><a
+                        href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="">
         {% block content %}
         {% endblock %}
     </section>
-    <div class="footer">
-        <div class="center full-w">
-            <div class="row">
-                <h3>Contact me!</h3>
+    <div class="bg-[#333] pt-[40px] mdx900:pt-[80px] font-rufina">
+        <div class="center w-full text-center">
+            <div class="row text-[#fff]">
+                <h3 class="my-8 text-[1.17em]">Contact me!</h3>
             </div>
         </div>
-        <div class="center full-w">
-            <div class="row">
-                <p>Or you can follow me on my social media</p>
+        <div class="center w-full text-center">
+            <div class="row text-[#fff]">
+                <p class="my-8 ">Or you can follow me on my social media</p>
             </div>
         </div>
-        <div class="center full-w social-links">
-            <div class="row">
-                <a target="_blank" href="#"><img width="30" class="social" src="{{ url_for('static', filename='linkedin.png') }}" /></a>
-                <a target="_blank" href="#"><img width="30" class="social" src="{{ url_for('static', filename='linkedin.png') }}" /></a>
-                <a target="_blank" href="#"><img width="30" class="social" src="{{ url_for('static', filename='linkedin.png') }}" /></a>
+        <div class="center w-full text-center social-links text-center w-full">
+            <div class="row flex items-center justify-center text-[#fff] gap-x-4">
+                <a target="_blank" href="#"><img width="30" class="w-[2.5rem] bg-[#fff] rounded-[5px] p-1"
+                        src="{{ url_for('static', filename='linkedin.png') }}" /></a>
+                <a target="_blank" href="#"><img width="30" class="w-[2.5rem] bg-[#fff] rounded-[5px] p-1"
+                        src="{{ url_for('static', filename='linkedin.png') }}" /></a>
+                <a target="_blank" href="#"><img width="30" class="w-[2.5rem] bg-[#fff] rounded-[5px] p-1"
+                        src="{{ url_for('static', filename='linkedin.png') }}" /></a>
             </div>
         </div>
-        <div class="made-with">
-            <div class="row">
-                <p>Doit with Python and Flask by Kevin Sequeira</p>
-            </div>
+        <div class="flex items-center text-[#555] mt-[20px] p-[30px]">
+            <p>Doit with Python and Flask by Kevin Sequeira</p>
         </div>
     </div>
 </body>
