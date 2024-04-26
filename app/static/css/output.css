@@ -608,6 +608,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -616,12 +620,16 @@ video {
   margin-top: 20px;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -640,6 +648,14 @@ video {
   display: grid;
 }
 
+.h-\[14rem\] {
+  height: 14rem;
+}
+
+.max-h-\[30\%\] {
+  max-height: 30%;
+}
+
 .w-\[2\.5rem\] {
   width: 2.5rem;
 }
@@ -650,6 +666,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
 }
 
 .max-w-\[500px\] {
@@ -670,6 +694,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -746,6 +774,31 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f2f2f2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f4f4f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f3f3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-1 {
@@ -931,6 +984,12 @@ video {
   }
 }
 
+@media (min-width: 800px) {
+  .mdx800\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 900px) {
   .mdx900\:m-0 {
     margin: 0px;
@@ -972,12 +1031,12 @@ video {
     width: 80%;
   }
 
-  .mdx900\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .mdx900\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mdx900\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .mdx900\:px-\[30px\] {
@@ -1026,6 +1085,12 @@ video {
 
   .mdx900\:text-\[50px\] {
     font-size: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .mdx1300\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
